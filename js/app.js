@@ -21,8 +21,8 @@ $(".spoiler").append("<button>Mostrar Spoiler!</button>");
 //3 Cuando se presiona el boton
 //Agregar un handler al evento clic
 $(".spoiler button").click(function(){
-	//3.1 Mostrar Spoiler
-	$(".spoiler span").show();
+	//3.1 Mostrar Spoiler que esta a lado del boton click
+	$(this).prev().show();
 
 	//3.2 Deshacerse del boton
 	$(this).remove();
